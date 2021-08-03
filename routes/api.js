@@ -1467,6 +1467,9 @@ router.get('/jadwalshalat', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
+                 status: true,
+                 code: 200,
+                 creator: `${creator}`,
                  result
              })
          })
