@@ -1492,6 +1492,9 @@ router.get('/fakedata', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
+                 status: true,
+                 code: 200,
+                 creator: `${creator}`,
                  result
              })
          })
@@ -1536,6 +1539,9 @@ router.get('/liriklagu', async (req, res, next) => {
         .then(data => {
         var result = data;
              res.json({
+                 status: true,
+                 code: 200,
+                 creator: `${creator}`,
                  result
              })
          })
